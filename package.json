@@ -11,7 +11,8 @@
     "typecheck": "flow",
     "prepublish": "npm run build",
     "test": "npm run lint && npm run typecheck && npm run test-src",
-    "test-src": "mocha \"src/**/__tests__/*.js\""
+    "test-src": "mocha \"src/**/__tests__/*.js\"",
+    "go": "npm run build && http-server"
   },
   "dependencies": {
     "class-autobind": "^0.1.4",
@@ -22,9 +23,7 @@
     "draft-js-import-html": "^0.3.0",
     "draft-js-import-markdown": "^0.2.0",
     "draft-js-utils": "^0.1.5",
-    "immutable": "^3.8.1"
-  },
-  "peerDependencies": {
+    "immutable": "^3.8.1",
     "react": "0.14.x || 15.x.x",
     "react-dom": "0.14.x || 15.x.x"
   },
